@@ -1,0 +1,175 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "niri",
+  "projectDescription": "A scrollable-tiling Wayland compositor with dynamic workspaces and powerful configuration.",
+  "theme": "aspen",
+  "primaryColor": "#8b5cf6",
+  "lightColor": "#a78bfa",
+  "darkColor": "#7c3aed",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started",
+              "important-software"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "workspaces",
+              "floating-windows",
+              "tabs",
+              "overview",
+              "gestures",
+              "fullscreen-maximize"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "screencasting",
+              "accessibility",
+              "layer-shell-components"
+            ]
+          },
+          {
+            "group": "Platform Support",
+            "pages": [
+              "nvidia",
+              "xwayland",
+              "application-issues"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "faq",
+              "example-systemd-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Configuration",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "config/introduction",
+              "config/include"
+            ]
+          },
+          {
+            "group": "Core Settings",
+            "pages": [
+              "config/input",
+              "config/outputs",
+              "config/layout",
+              "config/miscellaneous"
+            ]
+          },
+          {
+            "group": "Interaction",
+            "pages": [
+              "config/key-bindings",
+              "config/gestures",
+              "config/switch-events"
+            ]
+          },
+          {
+            "group": "Window Management",
+            "pages": [
+              "config/window-rules",
+              "config/layer-rules",
+              "config/named-workspaces",
+              "config/recent-windows"
+            ]
+          },
+          {
+            "group": "Visual Effects",
+            "pages": [
+              "config/animations"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "config/debug-options"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/overview",
+              "cli/msg-commands",
+              "cli/ipc"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Contributing",
+            "pages": [
+              "dev/design-principles",
+              "dev/developing-niri",
+              "dev/documenting-niri"
+            ]
+          },
+          {
+            "group": "Packaging & Integration",
+            "pages": [
+              "dev/packaging-niri",
+              "dev/integrating-niri"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "dev/fractional-layout",
+              "dev/redraw-loop",
+              "dev/animation-timing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Scrollable-tiling window management",
+    "Dynamic workspaces like GNOME",
+    "Built-in screenshot UI and screencasting",
+    "Touchpad and mouse gestures",
+    "Window tabs and floating windows",
+    "Live-reloading configuration",
+    "Custom animations with shader support",
+    "Gradient borders with Oklab/Oklch",
+    "Multi-monitor support with per-monitor workspaces",
+    "IPC for runtime control via niri msg"
+  ],
+  "publicApiSurface": [
+    "niri - Main compositor binary",
+    "niri msg - IPC command interface",
+    "niri validate - Config validation",
+    "niri-session - Session startup script",
+    "niri-ipc - Rust library for IPC integration",
+    "niri msg outputs - List outputs",
+    "niri msg workspaces - List workspaces",
+    "niri msg windows - List windows",
+    "niri msg action - Perform actions",
+    "niri msg event-stream - Subscribe to events"
+  ]
+}
